@@ -1,0 +1,75 @@
+.game-container {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+h3 {
+  color: rgb(8, 8, 134);
+  margin-bottom: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.game-container .card {
+  width: 100px;
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
+}
+.fa-star {
+  margin-left: 5px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button {
+  margin-top: 20px;
+}
+.numbers {
+  display: inline-block;
+  text-align: center;
+  padding: 20px 0;
+  width: 340px;
+  margin-top: 8px;
+}
+.number {
+  margin-left: 6px;
+  padding: 4px 10px;
+  border-radius: 50%;
+  background-color: #e3e3e3;
+  font-weight: 600;
+  cursor: pointer;
+  max-height: 100px;
+}
+.number.selected{
+  background: #f1f1f1;
+  color: #b0b0b0;
+  font-weight: 400;
+  cursor:not-allowed;
+}
+.numbers p{
+  font-family: "Yu Gothic Medium", sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+.used {
+  background-color: rgb(192, 235, 192);
+}
+.result .number {
+  line-height: 30px;
+}
+
+.btn-default {
+  background-color: rgb(236, 236, 234);
+  color: blue;
+  padding: 5px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
